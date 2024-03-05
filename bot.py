@@ -36,4 +36,6 @@ if STRING:
         app.stop()
     
 else:
-    bot.run()
+    bot.start()
+    
+    bot.stop()
