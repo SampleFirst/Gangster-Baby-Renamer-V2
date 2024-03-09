@@ -1,5 +1,5 @@
 import asyncio
-from pyrogram import Client, compose,idle
+from pyrogram import Client, compose, idle
 import os
 
 from plugins.cb_data import app as Client2
@@ -36,6 +36,4 @@ if STRING:
         app.stop()
     
 else:
-    bot.start()
-    
-    bot.stop()
+    bot.run()
