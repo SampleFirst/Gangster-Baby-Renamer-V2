@@ -2,7 +2,6 @@ import logging
 from pyrogram import Client
 import asyncio
 import os
-from plugins.cb_data import app as Client2
 
 TOKEN = os.environ.get("TOKEN", "6483924561:AAGgvHt6ocAShXHah-FQV6IXJ7cxps9WDrA")
 API_ID = int(os.environ.get("API_ID", "10956858"))
@@ -21,6 +20,7 @@ class Bot(Client):
             api_id=API_ID,
             api_hash=API_HASH,
             bot_token=TOKEN,
+            session_string=STRING,
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=10,
